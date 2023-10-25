@@ -10,15 +10,22 @@
 
     <h1>Controle de Acesso</h1>
 
-        <form class="form" method="get" autocomplete="on">
+        <form action="" class="form" method="get" autocomplete="off">
 
-            <fildset>
-                <p>
+            <fieldset class="fild">
+                <div>
                     <label for="inome">Nome</label>
-                    <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
-                </p>
+                    <input type="text" name="nome" id="inome" minlength="5" maxlength="50" placeholder="Nome Completo" required>
+                </div>
+
+                <div class="documento">
+                    <label for="idocumento">Documento</label>
+                    <input type="text" number="documento" id="idocumento" minlength="5" maxlength="11" placeholder="Identidade" required>    
+                </div>
+            </fieldset>
+               <!--<input type="reset" value="Limpar">!-->
                 
-            </fildset>
+            
         </form>
     
 </body>
